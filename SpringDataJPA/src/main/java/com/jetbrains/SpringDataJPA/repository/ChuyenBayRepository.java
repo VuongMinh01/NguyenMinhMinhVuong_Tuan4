@@ -21,4 +21,7 @@ public interface ChuyenBayRepository extends JpaRepository<ChuyenBay, String>{
 	
 	@Query( value =  " select count(MaCB) from chuyenbay where GaDi = 'SGN'",nativeQuery = true ) 
 	public int countSaiGon();
+	
+	@Query( value =  " select * from chuyenbay where GioDi < '12:00:00' ",nativeQuery = true ) 
+	public List<ChuyenBay> findChuyenBayTruoc12Gio();
 }

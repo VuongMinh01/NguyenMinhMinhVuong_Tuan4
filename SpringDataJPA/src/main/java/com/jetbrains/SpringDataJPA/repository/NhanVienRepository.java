@@ -12,4 +12,7 @@ public interface NhanVienRepository extends JpaRepository<NhanVien, String> {
 
 	@Query( value =  " select * from nhanvien where  Luong < 10000",nativeQuery = true ) 
 	List<NhanVien> findNhanVienLuongBeHon10000();
+	
+	@Query( value =  " select sum(Luong) from nhanvien ",nativeQuery = true ) 
+	public double sumLuong();
 }

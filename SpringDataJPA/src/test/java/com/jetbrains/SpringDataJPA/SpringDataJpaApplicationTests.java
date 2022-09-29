@@ -80,9 +80,37 @@ class SpringDataJpaApplicationTests {
 //		System.out.println("Số chuyến bay đi từ Sài Gòn (SGN): "+n);
 //	}
 	
+//	@Test
+//	void cau7() {
+//		int n = mayBayRepository.countBoeing();
+//		System.out.println("Số máy bay Boeing): "+n);
+//	}
+	
+//	@Test
+//	void cau8() {
+//		double n = nhanVienRepository.sumLuong();
+//		System.out.println("Số tiền lương phải trả): "+n);
+//	}
+	
+//	@Test
+//	void cau8() {
+//		double n = nhanVienRepository.sumLuong();
+//		System.out.println("Số tiền lương phải trả): "+n);
+//	}
+	
+//	@Test
+//	void cau20() {
+//		List<ChuyenBay> chuyenBays ;
+//		chuyenBays = chuyenBayRepository.findChuyenBayTruoc12Gio();
+//		for (ChuyenBay chuyenBay : chuyenBays) {
+//			System.out.println(chuyenBay);
+//		}
+//	}
+	
 	@Test
-	void cau7() {
-		int n = mayBayRepository.countBoeing();
-		System.out.println("Số máy bay Boeing): "+n);
+	void cau13() {
+		List<String> n = mayBayRepository.findMayBayCoTheThucHienCB820();
+		System.out.println("Các loại máy bay có thể thực hiện được chuyến bay 820 là: " +n);
 	}
+	
 }
