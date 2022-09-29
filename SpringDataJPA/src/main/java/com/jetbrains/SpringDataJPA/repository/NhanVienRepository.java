@@ -10,6 +10,6 @@ import com.jetbrains.SpringDataJPA.entity.NhanVien;
 
 public interface NhanVienRepository extends JpaRepository<NhanVien, String> {
 
-	@Query( value =  " select * from nhanvien where  > 10000",nativeQuery = true ) 
-	List<MayBay> findMayBayTamBayLonHon10000();
+	@Query( value =  " select * from nhanvien where  Luong < 10000",nativeQuery = true ) 
+	List<NhanVien> findNhanVienLuongBeHon10000();
 }
