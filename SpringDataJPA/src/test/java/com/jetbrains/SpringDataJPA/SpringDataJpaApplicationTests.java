@@ -74,9 +74,15 @@ class SpringDataJpaApplicationTests {
 //		}
 //	}
 	
+//	@Test
+//	void cau6() {
+//		int n = chuyenBayRepository.countSaiGon();
+//		System.out.println("Số chuyến bay đi từ Sài Gòn (SGN): "+n);
+//	}
+	
 	@Test
-	void cau6() {
-		int n = chuyenBayRepository.countSaiGon();
-		System.out.println("Số chuyến bay đi từ Sài Gòn (SGN): "+n);
+	void cau7() {
+		int n = mayBayRepository.countBoeing();
+		System.out.println("Số máy bay Boeing): "+n);
 	}
 }
