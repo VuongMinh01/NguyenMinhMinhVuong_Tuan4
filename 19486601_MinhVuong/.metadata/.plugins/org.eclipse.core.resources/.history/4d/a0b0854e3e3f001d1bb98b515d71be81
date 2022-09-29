@@ -1,5 +1,0 @@
-spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=QuanLyChuyenBay
-spring.datasource.username=sa
-spring.datasource.password=sa123
-spring.jpa.show-sql=true
-spring.jpa.hibernate.ddl-auto = update
