@@ -54,11 +54,21 @@ class SpringDataJpaApplicationTests {
 //		
 //	}
 	
+//	@Test
+//	void cau4() {
+//		List<ChuyenBay> chuyenBays ;
+//		
+//		chuyenBays = chuyenBayRepository.findChuyenBaysDoDaiLon10000VaNho8000();
+//		for (ChuyenBay chuyenBay : chuyenBays) {
+//			System.out.println(chuyenBay);
+//		}
+//	}
+	
 	@Test
-	void cau4() {
+	void cau5() {
 		List<ChuyenBay> chuyenBays ;
 		
-		chuyenBays = chuyenBayRepository.findChuyenBaysDoDaiLon10000VaNho8000();
+		chuyenBays = chuyenBayRepository.findChuyenBaySGDenBMT();
 		for (ChuyenBay chuyenBay : chuyenBays) {
 			System.out.println(chuyenBay);
 		}
