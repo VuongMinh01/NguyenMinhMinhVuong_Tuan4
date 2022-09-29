@@ -1,0 +1,24 @@
+package service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import entity.ChuyenBay;
+import repository.ChuyenBayRepository;
+@Service
+public class ChuyenBayServiceImpl implements ChuyenBayService {
+	
+	ChuyenBayRepository chuyenBayRepository;
+
+	public ChuyenBayServiceImpl(ChuyenBayRepository chuyenBayRepository) {
+		this.chuyenBayRepository = chuyenBayRepository;
+	}
+
+	@Override
+	public List<ChuyenBay> findChuyenBaysDaLat(String chuyenBay) {
+		return chuyenBayRepository.findChuyenBaysDaLat(chuyenBay);
+	}
+	
+	
+}

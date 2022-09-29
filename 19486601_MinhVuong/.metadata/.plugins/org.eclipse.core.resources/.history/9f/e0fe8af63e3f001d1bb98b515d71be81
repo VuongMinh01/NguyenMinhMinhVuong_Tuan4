@@ -1,0 +1,58 @@
+package entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Table(name = "maybay")
+public class MayBay {
+	@Id
+	@GeneratedValue
+	private int MaMB;
+	@Column(name = "Loai")
+	private String Loai;
+	@Column(name = "TamBay")
+	private String TamBay;
+	public int getMaMB() {
+		return MaMB;
+	}
+	public void setMaMB(int maMB) {
+		MaMB = maMB;
+	}
+	public String getLoai() {
+		return Loai;
+	}
+	public void setLoai(String loai) {
+		Loai = loai;
+	}
+	public String getTamBay() {
+		return TamBay;
+	}
+	public void setTamBay(String tamBay) {
+		TamBay = tamBay;
+	}
+	public MayBay(int maMB, String loai, String tamBay) {
+		super();
+		MaMB = maMB;
+		Loai = loai;
+		TamBay = tamBay;
+	}
+	public MayBay() {
+		super();
+	}
+	
+	
+	
+}

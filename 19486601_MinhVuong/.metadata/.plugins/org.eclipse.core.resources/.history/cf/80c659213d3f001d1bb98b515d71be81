@@ -1,0 +1,76 @@
+package entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Table(name = "nhanvien")
+public class NhanVien {
+	@Id
+	@GeneratedValue
+	private int MaNV;
+	@Column(name = "Ten")
+	private String Ten;
+	@Column(name = "Luong")
+	private double Luong;
+	public int getMaNV() {
+		return MaNV;
+	}
+	public void setMaNV(int maNV) {
+		MaNV = maNV;
+	}
+	public String getTen() {
+		return Ten;
+	}
+	public void setTen(String ten) {
+		Ten = ten;
+	}
+	public double getLuong() {
+		return Luong;
+	}
+	public void setLuong(double luong) {
+		Luong = luong;
+	}
+	public NhanVien(int maNV, String ten, double luong) {
+		super();
+		MaNV = maNV;
+		Ten = ten;
+		Luong = luong;
+	}
+	public NhanVien() {
+		super();
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + MaNV;
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		NhanVien other = (NhanVien) obj;
+		if (MaNV != other.MaNV)
+			return false;
+		return true;
+	}
+	
+}

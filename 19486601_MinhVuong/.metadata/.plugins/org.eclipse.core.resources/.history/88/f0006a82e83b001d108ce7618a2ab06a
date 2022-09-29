@@ -1,0 +1,9 @@
+package repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import entity.ChuyenBay;
+
+public interface ChuyenBayRepository extends CrudRepository<ChuyenBay, Integer>{
+	
+}
