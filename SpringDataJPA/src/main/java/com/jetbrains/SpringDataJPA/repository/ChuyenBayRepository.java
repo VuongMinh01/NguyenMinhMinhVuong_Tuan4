@@ -24,4 +24,7 @@ public interface ChuyenBayRepository extends JpaRepository<ChuyenBay, String>{
 	
 	@Query( value =  " select * from chuyenbay where GioDi < '12:00:00' ",nativeQuery = true ) 
 	public List<ChuyenBay> findChuyenBayTruoc12Gio();
+	
+	@Query( value =  " select * from chuyenbay where DoDai < (select TamBay from maybay where Loai = 'Airbus A320')",nativeQuery = true ) 
+	List<ChuyenBay> findChuyenBayCoTheThucHienBoiA320();
 }

@@ -15,4 +15,7 @@ public interface NhanVienRepository extends JpaRepository<NhanVien, String> {
 	
 	@Query( value =  " select sum(Luong) from nhanvien ",nativeQuery = true ) 
 	public double sumLuong();
+	
+	@Query( value =  " select MaNV from nhanvien where Luong = max(Luong) ",nativeQuery = true ) 
+	public List<NhanVien> findNhanVienCoLuongCaoNhat();
 }

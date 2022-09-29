@@ -107,10 +107,19 @@ class SpringDataJpaApplicationTests {
 //		}
 //	}
 	
-	@Test
-	void cau13() {
-		List<String> n = mayBayRepository.findMayBayCoTheThucHienCB820();
-		System.out.println("Các loại máy bay có thể thực hiện được chuyến bay 820 là: " +n);
-	}
+//	@Test
+//	void cau13() {
+//		List<String> n = mayBayRepository.findMayBayCoTheThucHienCB820();
+//		System.out.println("Các loại máy bay có thể thực hiện được chuyến bay 820 là: " +n);
+//	}
+	
+//	@Test
+//	void cau14() {
+//		List<ChuyenBay> chuyenBays = chuyenBayRepository.findChuyenBayCoTheThucHienBoiA320();
+//		for (ChuyenBay chuyenBay : chuyenBays) {
+//			System.out.println(chuyenBay);
+//		}
+//	}
+	
 	
 }
