@@ -64,13 +64,19 @@ class SpringDataJpaApplicationTests {
 //		}
 //	}
 	
+//	@Test
+//	void cau5() {
+//		List<ChuyenBay> chuyenBays ;
+//		
+//		chuyenBays = chuyenBayRepository.findChuyenBaySGDenBMT();
+//		for (ChuyenBay chuyenBay : chuyenBays) {
+//			System.out.println(chuyenBay);
+//		}
+//	}
+	
 	@Test
-	void cau5() {
-		List<ChuyenBay> chuyenBays ;
-		
-		chuyenBays = chuyenBayRepository.findChuyenBaySGDenBMT();
-		for (ChuyenBay chuyenBay : chuyenBays) {
-			System.out.println(chuyenBay);
-		}
+	void cau6() {
+		int n = chuyenBayRepository.countSaiGon();
+		System.out.println("Số chuyến bay đi từ Sài Gòn (SGN): "+n);
 	}
 }
