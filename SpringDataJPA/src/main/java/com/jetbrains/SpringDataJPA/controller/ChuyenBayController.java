@@ -17,7 +17,7 @@ public class ChuyenBayController {
 	
 	
 	
-	@GetMapping("/didalat")
+	@GetMapping("/cau1")
 	public List<ChuyenBay> findChuyenBaysDaLat(){
 		return chuyenBayRepository.findChuyenBaysDaLat();
 	}

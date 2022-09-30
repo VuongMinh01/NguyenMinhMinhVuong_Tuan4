@@ -15,7 +15,7 @@ public class MayBayController {
 	@Autowired
 	MayBayRepository mayBayRepository;
 	
-	@GetMapping("/maybay10000")
+	@GetMapping("/cau2")
 	List<MayBay> findMayBayTamBayLonHon10000(){
 		return mayBayRepository.findMayBayTamBayLonHon10000();
 	}
