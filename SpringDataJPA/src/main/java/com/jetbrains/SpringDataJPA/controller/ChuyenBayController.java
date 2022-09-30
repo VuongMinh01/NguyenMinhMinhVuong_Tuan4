@@ -15,9 +15,14 @@ public class ChuyenBayController {
 	@Autowired
 	ChuyenBayRepository chuyenBayRepository;
 	
+	
+	
 	@GetMapping("/didalat")
 	public List<ChuyenBay> findChuyenBaysDaLat(){
 		return chuyenBayRepository.findChuyenBaysDaLat();
 	}
+	
+	
+	
 	
 }
