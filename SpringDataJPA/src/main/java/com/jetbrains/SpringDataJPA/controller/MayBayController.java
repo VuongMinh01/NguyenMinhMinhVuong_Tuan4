@@ -16,8 +16,19 @@ public class MayBayController {
 	MayBayRepository mayBayRepository;
 	
 	@GetMapping("/cau2")
-	List<MayBay> findMayBayTamBayLonHon10000(){
+	public List<MayBay> findMayBayTamBayLonHon10000(){
 		return mayBayRepository.findMayBayTamBayLonHon10000();
+	}
+	
+	
+	@GetMapping("/cau7")
+	public int countBoeing (){
+		return mayBayRepository.countBoeing();
+	}
+	
+	@GetMapping("/cau13")
+	public List<String> findMayBayCoTheThucHienCB820(){
+		return mayBayRepository.findMayBayCoTheThucHienCB820();
 	}
 
 }

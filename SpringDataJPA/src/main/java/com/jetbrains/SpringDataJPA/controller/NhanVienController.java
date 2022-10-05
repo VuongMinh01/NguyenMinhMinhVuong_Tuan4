@@ -19,4 +19,9 @@ public class NhanVienController {
 	List<NhanVien> findNhanVienLuongBeHon10000(){
 		return nhanVienRepository.findNhanVienLuongBeHon10000();
 	}
+	
+	@GetMapping("/cau8")
+	public double sumLuong(){
+		return nhanVienRepository.sumLuong();
+	}
 }

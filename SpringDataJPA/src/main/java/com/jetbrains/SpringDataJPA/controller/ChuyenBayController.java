@@ -23,6 +23,26 @@ public class ChuyenBayController {
 	}
 	
 	
+	@GetMapping("/cau4")
+	public List<ChuyenBay> findChuyenBaysDoDaiLon10000VaNho8000(){
+		return chuyenBayRepository.findChuyenBaysDoDaiLon10000VaNho8000();
+	}
+	
+	
+	@GetMapping("/cau5")
+	public List<ChuyenBay> findChuyenBaySGDenBMT(){
+		return chuyenBayRepository.findChuyenBaySGDenBMT();
+	}
+	
+	@GetMapping("/cau6")
+	public int countSaiGon(){
+		return chuyenBayRepository.countSaiGon();
+	}
+	
+	@GetMapping("/cau14")
+	public List<ChuyenBay> findChuyenBayCoTheThucHienBoiA320(){
+		return chuyenBayRepository.findChuyenBayCoTheThucHienBoiA320();
+	}
 	
 	
 }
